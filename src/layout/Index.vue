@@ -9,10 +9,7 @@
                 </el-main>
                 <!-- footer -->
                 <el-footer height="48px">
-                    Copyright &copy; 2021
-                    <el-link href="https://www.cnblogs.com/zxk5211" target="_blank">下落香樟树</el-link> ·
-                    <el-link href="https://juejin.cn/user/184373682901309" target="_blank">掘金社区</el-link> ·
-                    <el-link href="https://blog.csdn.net/SK_21" target="_blank">CSDN</el-link>
+                    © {{year}} 版权所有
                 </el-footer>
                 <!-- backtop -->
                 <el-backtop target=".app_wrap"></el-backtop>
@@ -22,12 +19,28 @@
 </template>
 
 <script>
+import { onMounted, reactive, ref, toRefs,computed, toRaw, getCurrentInstance } from "vue";
 import Aside from "./Aside.vue";
 import Header from "./Header.vue";
+import dayjs from "dayjs";
 
 export default {
-    components: { Aside, Header },
-    setup() {}
+    components: { Aside, Header, dayjs },
+    setup() {
+    	const state = reactive({
+    		year:'',
+    	})
+    	const getYear = () => {
+    		state.year = dayjs().format("YYYY")
+    		console.log(state.year)
+    	}
+    	onMounted(() => {
+			getYear();
+		});
+    	return {
+    		...toRefs(state),
+    	}
+    }
 };
 </script>
 

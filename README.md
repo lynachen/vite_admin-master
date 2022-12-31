@@ -36,29 +36,9 @@ yarn build
 
 ![Login](./src/assets/pages/login.png)
 
-#### Index 控制台
+#### Tree 树形控件
 
-![Index](./src/assets/pages/index.png)
-
-#### Charts 数据图表
-
-![Charts](./src/assets/pages/chart.png)
-
-#### Data 数据管理
-
-![Data](./src/assets/pages/data.png)
-
-#### Editor 富文本编辑器
-
-![Editor](./src/assets/pages/editor.png)
-
-#### Player 西瓜播放器
-
-![Player](./src/assets/pages/player.png)
-
-#### User 个人中心
-
-![User](./src/assets/pages/user.png)
+![Tree](./src/assets/pages/tree.png)
 
 #### 404 Not Found
 

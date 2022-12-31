@@ -4,11 +4,11 @@
             <el-card shadow="hover" style="margin-bottom: 16px">
                 <div class="user_left">
                     <img class="avatar" src="@/assets/img/admin.png" draggable="false" />
-                    <p class="user_name">下落香樟树</p>
+                    <p class="user_name">admin</p>
                     <!-- 个人信息 -->
                     <div class="line">
                         <Icons name="message" />
-                        <span>userState.email</span>
+                        <span>xxxxx.email</span>
                     </div>
                     <div class="line">
                         <Icons name="postcard" />
