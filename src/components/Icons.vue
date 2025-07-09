@@ -1,12 +1,12 @@
 <template>
-    <el-icon :size="size" :color="color" style="height: 100%">
+    <el-icon :size="size" :color="color">
         <component :is="name"></component>
     </el-icon>
 </template>
 
 <script>
 import { defineComponent } from "vue";
-import * as Icons from "@element-plus/icons";
+import * as Icons from "@element-plus/icons-vue";
 
 export default defineComponent({
     name: "Icons",
